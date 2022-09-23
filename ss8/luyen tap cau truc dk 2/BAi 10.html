@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=0;
+    let b=prompt("Nhập chữ điện");
+    if(b>9){
+        a=b*8;
+    }else
+        if(b>7){
+        b=a*6;
+    }else
+        if(b>5){
+        a=b*4;
+    }else{
+        a=b*3;
+    }
+    document.write("Giá tiền điện là: " + a);
+</script>
+</body>
+</html>

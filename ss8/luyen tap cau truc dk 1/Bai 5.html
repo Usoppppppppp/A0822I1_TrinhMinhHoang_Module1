@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h=prompt("Điểm bài kiểm tra")
+    let t=prompt("Điểm thi giữa kỳ")
+    let m=prompt("Điểm thi cuối kỳ")
+    tbhk = (h+(t*2)+(m*3))/6
+    if(tbhk>=8.0){
+        document.write("HSG")
+    }else
+        if(tbhk>=6.5){
+            document.write("HSTT")
+        }else
+            document.write("HSTB")
+</script>
+</body>
+</html>

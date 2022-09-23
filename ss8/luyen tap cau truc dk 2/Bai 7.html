@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập vào giá trị a")
+    let b = prompt("Nhập vào giá trị b")
+    let c = prompt("Nhập vào giá trị c")
+    h=b*b-4*a*c
+    if(delta>0){
+        alert("Phương trình có 2 nghiệm phân biệt đó là: X1 = "+ ((-b - Math.sqrt(h)) /(2*a)));
+        alert("Và X2 = " + ((-b + Math.sqrt(h)) /(2*a)));
+    }else
+        if(h===0){
+        alert(" Phương trình có 1 nghiệm kép là X1=X2= " + (-b) / (2 * a));
+    }else{
+        alert("Phương trình vô nghiệm");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td colspan="100">
+                <input type="text" name="result" id="result">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" onclick="a(this.value)">
+            </td>
+            <td>
+                <input type="button" value="2" onclick="a(this.value)">
+            </td>
+            <td>
+                <input type="button" value="3" onclick="a(this.value)">
+            </td>
+            <td>
+                <input type="button" value="+" onclick="a(this.value)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="4" onclick="a(this.value)">
+            </td>
+            <td>
+                <input type="button" value="5" onclick="a(this.value)">
+            </td>
+            <td>
+                <input type="button" value="6" onclick="a(this.value)">
+            </td>
+            <td>
+                <input type="button" value="-" onclick="a(this.value)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="7" onclick="a(this.value)">
+            </td>
+            <td>
+                <input type="button" value="8" onclick="a(this.value)">
+            </td>
+            <td>
+                <input type="button" value="9" onclick="a(this.value)">
+            </td>
+            <td>
+                <input type="button" value="*" onclick="a(this.value)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="C" onclick="a(this.value)">
+            </td>
+            <td>
+                <input type="button" value="0" onclick="a(this.value)">
+            </td>
+            <td>
+                <input type="button" value="=" onclick="b(this.value)">
+            </td>
+            <td>
+                <input type="button" value="/" onclick="a(this.value)">
+            </td>
+        </tr>
+    </table>
+</form>
+<script>
+    function a(value){
+        document.getElementById("result").value+=value;
+    }
+    function b(){
+        let c= document.getElementById("result").value;
+        let d= eval(c)
+        document.getElementById("result").value = d;
+    }
+</script>
+</body>
+</html>
