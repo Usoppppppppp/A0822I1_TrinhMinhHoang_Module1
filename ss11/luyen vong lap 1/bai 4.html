@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a= 0;
+        let b=1;
+        for (let i = 1; i <= 21 ; i++) {
+            fibonacci= a + b;
+            a = b;
+            b = fibonacci;
+            if (fibonacci%5==0){
+                document.write("số đầu tiên trong dãy fibonacci chia cho 5 là: " + fibonacci);
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
